@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-water: #07141c;
+  --color-panel: #10222e;
+  --color-panel-2: #173243;
+  --color-ink: #e7f0f5;
+  --color-mist: #8ea6b6;
+  --color-line: #2a4558;
+  --color-teal: #2fbfc7;
+  --color-teal-ink: #042226;
+  --color-gold: #e4b23c;
+  --color-limit: #ff4d4d;
+  --font-sans: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-water);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+  }
+}
+
+.safe-pad {
+  padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
