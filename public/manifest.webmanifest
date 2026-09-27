@@ -1,0 +1,17 @@
+{
+  "name": "Dive Slate",
+  "short_name": "Dive Slate",
+  "start_url": "/dive-slate/",
+  "scope": "/dive-slate/",
+  "display": "standalone",
+  "background_color": "#07141c",
+  "theme_color": "#07141c",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
